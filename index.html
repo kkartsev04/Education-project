@@ -8,8 +8,139 @@
 	<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-	<h1>gitHub</h1>
-	<h2>change</h2>
+
+<ul>
+	<h1><b>JAVA SCRIPT BASE</b></h1>	
+	<h3><li>Переменные / Variables. Общая информация: <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/First_steps/Variables">First_steps/Variables</a>
+	</h3>	
+		<ul>
+			<li> Const: <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const">const</a> 
+			<li>Let: <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let">let</a>
+		</ul>
+		<li>Типы данных / Data types <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures">Data_structures</a>
+		<li>Сравнения <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness">Equality_comparisons_and_sameness</a>
+		<li>Условия if..else <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else">Conditions if...else</a>
+		<li>Функции / function <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Functions">Functions</a>
+
+<pre class="color">
+	<code>
+		<b>
+		function calculateTotal(num1, num2) {
+		return num1 + num2;
+		}
+		calculateTotal(10, 3);
+	</b>
+	</code>
+</pre>
+		<li>Массивы / Arrays <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/First_steps/Arrays">Arrays</a>
+<pre class="color">
+	<code>
+		<b>const products = ['сыр', 'грибы', 'ветчина', 'помидор'];
+		products.push('морковь');</b>
+	</code>
+</pre>
+		<li>Объекты <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/Objects">Objects</a>
+<pre>
+	<code class="color">
+		<b>
+		const car = {
+		model: 'Tesla',
+		year: 2022,
+		color: 'silver',
+		options: ['sport seats', 'diesel'],
+		atStock: true,
+		engine: {type: 'v8', turbo: true
+		}}
+		</b>
+	</code>
+</pre>
+
+		<li>Циклы / Loops_and_iteration <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration">Loops_and_iteration</a>
+
+<pre class="color">
+	<code>
+	<b>
+	const products = ['сыр', 'грибы', 'ветчина''помидор'];
+	function logIngredients(ingredient, index) {
+		if (index === (products.length -1)) {
+			console.log(ingredient, index);
+			}
+		}
+		products.forEach(logIngredients);
+	</b>
+	</code>
+</pre>
 	
+		<li>Dom (Document Object Model) дерево <a href="https://developer.mozilla.org/ru/docs/Web/API/Document_Object_Model">Document_Object_Model</a>
+<pre class="color">
+	<code>
+	<b>
+	const h2 = document.querySelector('.wrapper h2');
+	h2.textContent = 'Dom Tree';
+	h2.style.color = 'blue';
+	</b>
+	</code>
+</pre>
+
+
+<br>	DOM Изображение:
+<pre class="color">
+	<code>
+	<b>
+	const myPic = document.querySelector('.myPic');
+	myPic.addEventListener('click', function() {
+	myPic.classList.toggle('circle');
+	})
+	</b>
+	</code>
+</pre>
+
+		<li>События / Building_blocks/Events <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/Building_blocks/Events">Building_blocks/Events</a>
+		<li>Асинхронность <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/Asynchronous">Asynchronous</a>
+
+<pre class="color">
+	<code>
+		<b>
+		function makeBurger() {
+		const burgerPromise = new Promise(function(resolve, reject) {
+		setTimeout(function() {
+		// Бургер готов
+		resolve('Ваш бургер готов!')
+		}, 2000)
+			});
+		return burgerProm
+				}
+		const burger = makeBurger();
+		const burger2 = makeBurger();
+		console.log(burger)
+			burger.then(function(myBurger) {
+			console.log('my burger 1> ', myBurger)
+				})
+				burger2.then(function(myBurger) {
+					console.log('my burger 2> ', myBurger)})
+			</b>
+	</code>
+</pre>
+
+	
+		<li>Условия
+<pre class="color">
+	<code>
+		<b>
+		if (10 > 5) {
+		console.log('Yes');
+		} else if (20 > 15) {
+		console.log('Yes 2');
+		} else if (50 < 60) {
+		console.log('Yes 3');
+		}
+		</b>
+	</code>
+</pre>
+		
+	<li>методы массивов (map filter reduce)
+</ul>
+
+</p>
 </body>
 </html>

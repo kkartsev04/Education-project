@@ -1,2 +1,2 @@
-# learn-java-script
+# JAVA SCRIPT BASE
  Educational project
